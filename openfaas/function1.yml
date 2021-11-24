@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://localhost:31112/
+functions:
+  function1:
+    lang: python
+    handler: ./function1
+    image: localhost:5000/function1:latest
